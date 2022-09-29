@@ -6,12 +6,23 @@
     },
     {
         "type": "text",
-        "content": "The audio visualizer"
+        "content": "For a 2nd year digital design course, my partner and I were tasked with implementing a project of our choice on bare metal, on a development board running an ARM Cortex-A9 (with an FPGA in the SoC)."
+    },
+    {
+        "type": "text",
+        "content": "We decided to create a Audio Visualizer, which would take an audio input, and output the Waveform to VGA. We programmed this in C, which compiles and runs on the onboard ARM chip. All external IO including VGA and microphone is interfaced directly through memory mapped IO."
     },
     {
         "type": "image",
         "url": "res/img/audiovisualizer.png",
         "caption": "Screenshot showing output"
+    },
+    {
+        "type": "text",
+        "content": "Development of this allowed me to learn more about digital signal processing, including different filtering algorithms and their effects on the output frequency space plot. I also had to manually implement several high performance math functions: pow, cos, sin, sqrt."
+    },{
+        "type": "text",
+        "content": "Experimented with Hann and Blackman windows."
     },
     {
         "type": "link",

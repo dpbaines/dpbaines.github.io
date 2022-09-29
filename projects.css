@@ -65,6 +65,15 @@
 }
 
 
+.experience-smalldesc {
+    font-family: Merriweather;
+    color: grey;
+    font-size: 16px;
+    text-align: left;
+    grid-row: 5;
+    grid-column: 1;
+    font-style: italic;
+}
 
 #timeline {
     display: inline-block;

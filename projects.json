@@ -16,8 +16,8 @@
         },
         {
             "title": "Posfix",
-            "summary": "Fix your posture or else",
-            "url": "res/img/audiovisualizer.png",
+            "summary": "How can we use technology to improve your posture",
+            "url": "res/img/posfix.png",
             "page": "projects/posfix.json",
             "color": "#ff787883"
         },

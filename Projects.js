@@ -156,6 +156,7 @@ class Experience extends React.Component {
                     <div className="experience-title">{this.props.title}</div>
                     <div className="experience-role">{this.props.role}</div>
                     <div className="experience-description">{this.props.description}</div>
+                    <div className="experience-smalldesc">{this.props.smalldesc}</div>
                 </div>
             </div>
         );
@@ -171,6 +172,7 @@ class Experiences extends React.Component {
                 "role": "",
                 "time": "",
                 "description": "",
+                "smalldesc": "",
                 "color": "#007DC3"
             }]
         };
@@ -185,7 +187,7 @@ class Experiences extends React.Component {
 
     render() {
         const mappedExps = this.state.exps.map((exp) =>
-            <Experience key={exp.title} title={exp.title} hintColor={exp.color} time={exp.time} role={exp.role} description={exp.description} />
+            <Experience key={exp.title} title={exp.title} hintColor={exp.color} time={exp.time} role={exp.role} description={exp.description} smalldesc={exp.smalldesc} />
         );
         // console.log(Array.isArray(mappedExps));
 

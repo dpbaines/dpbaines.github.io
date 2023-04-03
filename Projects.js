@@ -63,7 +63,6 @@ class PopupContent extends React.Component {
             switch(val.type) {
                 case "text":
                     return <p className="popup-text">{val.content}</p>
-                    break;
                 case "image":
                     return (
                         <div>
@@ -71,10 +70,8 @@ class PopupContent extends React.Component {
                             <p className="popup-img-caption">{val.caption}</p>
                         </div>
                     );
-                    break;
                 case "title":
                     return <p className="popup-title" style={{borderColor: this.props.hintColor}} >{val.content}</p>
-                    break;
                 case "link":
                     return (
                     <div className="popup-link" style={{borderColor: this.props.hintColor}}>
@@ -82,12 +79,10 @@ class PopupContent extends React.Component {
                             {val.content}
                         </a>
                     </div>);
-                    break;
                 case "youtube":
                     return (
                         <center><iframe width="640px" height="360px" src={val.url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
                     );
-                    break;
                 default:
                     return <p>Invalid tag type</p>
             }

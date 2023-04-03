@@ -2,6 +2,22 @@
     "experiences": [
         {
             "title": "Amazon",
+            "role": "Software Development Engineer 1",
+            "time": "Future",
+            "description": "Returning to my previous team at BeautyTech",
+            "smalldesc": "",
+            "color": "#FF9900"
+        },
+        {
+            "title": "Caracal",
+            "role": "Capstone Project",
+            "time": "September 2022 - May 2023",
+            "description": "Capstone design project, on the research distributed database project Caracal, under Prof. Ashvin Goel",
+            "smalldesc": "Our team implemented data migration and dynamic transaction generation for benchmarking, of which I implemented the data transfer, and migration control code.",
+            "color": "#68D89B"
+        },
+        {
+            "title": "Amazon",
             "role": "Software Development Engineer - Intern",
             "time": "June 2022 - August 2022",
             "description": "Worked in BeautyTech (Consumables) to improve the shopping experience for makeup.",

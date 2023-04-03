@@ -5,7 +5,6 @@ var num_list = 0;
 var professions = [
     "Computer Engineer",
     "Researcher",
-    "Electrical Engineer",
     "Tech Enthusiast",
     "Formula Student Engineer",
     "Former Thai Expat",
@@ -13,8 +12,9 @@ var professions = [
     "Machinist",
     "History Buff",
     "Linux Ricer",
-    "Wannabe Car Guy",
+    "Car Guy",
     "Gym goer",
+    "BJJ White Belt - 1 Stripe",
     "International Student"
 ];
 

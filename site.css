@@ -501,6 +501,7 @@ a:hover {
     
         display: grid;
         grid-template-columns: fit-content(25%) 75%;
+        grid-template-rows: fit-content(33%) 66%;
     }
     
     .header_grid_1 {

@@ -23,6 +23,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
+    white-space: nowrap;
 
     animation-name: scroll-item;
     animation-duration: 8s;
@@ -70,7 +71,7 @@
         text-align: center;
         margin-top: 5px;
         margin-bottom: 5px;
-        width: unset;
+        width: fit-content;
 
         animation-name: scroll-item;
         animation-duration: 8s;

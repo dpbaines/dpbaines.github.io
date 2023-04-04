@@ -4,28 +4,28 @@
             "title": "RISC-V CPU Core",
             "summary": "A pipelined CPU core written in SystemVerilog",
             "url": "res/img/cpurtl1.png",
-            "page": "projects/cpucore.json",
+            "page": "projects/cpucore.md",
             "color": "#CAB8FF83"
         },
         {
             "title": "Mandelbrot Set",
             "summary": "A Mandelbrot set renderer in Verilog, targetted for a Cyclone V FPGA",
             "url": "res/img/mandelbrot.png",
-            "page": "projects/mandelbrot.json",
+            "page": "projects/mandelbrot.md",
             "color": "rgba(130, 160, 243, 0.5)"
         },
         {
             "title": "Posfix",
             "summary": "How can we use technology to improve your posture",
             "url": "res/img/posfix.png",
-            "page": "projects/posfix.json",
+            "page": "projects/posfix.md",
             "color": "#ff787883"
         },
         {
             "title": "Audio Visualizer",
             "summary": "An FPGA based audio visualizer",
             "url": "res/img/audiovisualizer.png",
-            "page": "projects/audio.json",
+            "page": "projects/audio.md",
             "color": "#C6D57E83"
         }
     ]

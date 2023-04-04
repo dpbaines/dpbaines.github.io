@@ -37,18 +37,21 @@ class PopupContent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: [{
-                "type": "text",
-                "content": "Loading..."
-            }],
+            content: {__html: "Loading..."},
             currUrl: this.props.page
         };
     }
 
     componentDidMount() {
+        // fetch(this.props.page)
+        //     .then(response => response.json())
+        //     .then(y => this.setState({content: y.list}));
+        var md = window.markdownit();
+
         fetch(this.props.page)
-            .then(response => response.json())
-            .then(y => this.setState({content: y.list}));
+                .then(response => response.text())
+                .then(raw => md.render(raw))
+                .then(y => this.setState({content: {__html: y}}));
     }
 
     componentDidUpdate() {
@@ -59,41 +62,75 @@ class PopupContent extends React.Component {
     }
 
     render() {
-        const output = this.state.content.map((val => {
-            switch(val.type) {
-                case "text":
-                    return <p className="popup-text">{val.content}</p>
-                case "image":
-                    return (
-                        <div>
-                            <img className="popup-img" src={val.url}></img>
-                            <p className="popup-img-caption">{val.caption}</p>
-                        </div>
-                    );
-                case "title":
-                    return <p className="popup-title" style={{borderColor: this.props.hintColor}} >{val.content}</p>
-                case "link":
-                    return (
-                    <div className="popup-link" style={{borderColor: this.props.hintColor}}>
-                        <a href={val.url} style={{color: "black"}}>
-                            {val.content}
-                        </a>
-                    </div>);
-                case "youtube":
-                    return (
-                        <center><iframe width="640px" height="360px" src={val.url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
-                    );
-                default:
-                    return <p>Invalid tag type</p>
-            }
-        }));
+        // TODO: Apparently has the risk of XSS attacks, but why would anyone xss this site
         return (
-            <div>
-                {output}
+            <div className="project-content-box"  dangerouslySetInnerHTML={this.state.content}>
             </div>
         );
     }
 }
+
+// class PopupContent extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             content: [{
+//                 "type": "text",
+//                 "content": "Loading..."
+//             }],
+//             currUrl: this.props.page
+//         };
+//     }
+
+//     componentDidMount() {
+//         fetch(this.props.page)
+//             .then(response => response.json())
+//             .then(y => this.setState({content: y.list}));
+//     }
+
+//     componentDidUpdate() {
+//         if (this.state.currUrl != this.props.page) {
+//             this.componentDidMount();
+//             this.setState({currUrl: this.props.page});
+//         }
+//     }
+
+//     render() {
+//         const output = this.state.content.map((val => {
+//             switch(val.type) {
+//                 case "text":
+//                     return <p className="popup-text">{val.content}</p>
+//                 case "image":
+//                     return (
+//                         <div>
+//                             <img className="popup-img" src={val.url}></img>
+//                             <p className="popup-img-caption">{val.caption}</p>
+//                         </div>
+//                     );
+//                 case "title":
+//                     return <p className="popup-title" style={{borderColor: this.props.hintColor}} >{val.content}</p>
+//                 case "link":
+//                     return (
+//                     <div className="popup-link" style={{borderColor: this.props.hintColor}}>
+//                         <a href={val.url} style={{color: "black"}}>
+//                             {val.content}
+//                         </a>
+//                     </div>);
+//                 case "youtube":
+//                     return (
+//                         <center><iframe width="640px" height="360px" src={val.url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+//                     );
+//                 default:
+//                     return <p>Invalid tag type</p>
+//             }
+//         }));
+//         return (
+//             <div>
+//                 {output}
+//             </div>
+//         );
+//     }
+// }
 
 class Projects extends React.Component {
     constructor(props) {
@@ -103,10 +140,10 @@ class Projects extends React.Component {
                 "title": "Loading...",
                 "summary": "",
                 "url": "res/img/mandelbrot.png",
-                "page": "projects/mandelbrot.json",
+                "page": "projects/mandelbrot.md",
                 "color": "#007DC3"
             }],
-            currentPage: "projects/mandelbrot.json",
+            currentPage: "projects/mandelbrot.md",
             currentHintColor: "#007DC3"
         };
     }
@@ -133,7 +170,7 @@ class Projects extends React.Component {
             <div>
                 {mappedProjs}
                 <div className="modal" onClick={() => close_modal()}>
-                    <div className="modal-content" onClick={(event) => event.stopPropagation()}>
+                    <div className="modal-content" style={{borderColor: this.state.currentHintColor}} onClick={(event) => event.stopPropagation()}>
                         <PopupContent page={this.state.currentPage} hintColor={this.state.currentHintColor} />
                     </div>
                 </div>

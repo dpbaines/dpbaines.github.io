@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Caracal - Database",
+            "summary": "My capstone project, working on a deterministic distributed database",
+            "url": "res/img/datamigration.png",
+            "page": "projects/caracal.md",
+            "color": "#59092583"
+        },
+        {
             "title": "RISC-V CPU Core",
             "summary": "A pipelined CPU core written in SystemVerilog",
             "url": "res/img/cpurtl1.png",

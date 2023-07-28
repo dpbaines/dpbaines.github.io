@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Pathfinder",
+            "summary": "My WIP travel itinerary optimizer, a full stack Rust web application.",
+            "url": "res/img/pathfinder.png",
+            "page": "projects/pathfinder.md",
+            "color": "#427bf583"
+        },
+        {
             "title": "Caracal - Database",
             "summary": "My capstone project, working on a deterministic distributed database",
             "url": "res/img/datamigration.png",

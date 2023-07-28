@@ -213,3 +213,19 @@
     color: black;
     max-width: 100px;
 }
+
+@media only screen and (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+        border-width: 5px;
+    }
+
+    .project-cell {
+        grid-template-columns: 3fr;
+        margin: 5px;
+    }
+
+    .project-image {
+        display: none;
+    }
+}

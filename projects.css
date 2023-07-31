@@ -164,7 +164,7 @@
     overflow-y: scroll;
 }
 
-.project-content-box p {
+.project-content-box p, .project-content-box li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     line-height: normal;

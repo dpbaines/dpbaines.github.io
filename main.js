@@ -114,7 +114,6 @@ function init_navbar() {
 }
 
 function init() {
-    init_timeout();
     init_projects();
     init_navbar();
     create_svg();

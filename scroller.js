@@ -6,15 +6,7 @@ var professions = [
     "Computer Engineer",
     "Researcher",
     "Tech Enthusiast",
-    "Formula Student Engineer",
-    "Former Thai Expat",
     "Bicyclist",
-    "Machinist",
-    "History Buff",
-    "Linux Ricer",
-    "Car Guy",
-    "Gym goer",
-    "BJJ White Belt - 1 Stripe",
     "International Student"
 ];
 

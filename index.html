@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="preload" href="res/img/toronto.webp" />
 
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/snap.svg-min.js"></script>
@@ -22,11 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preload" href="/font/SF Kingston.woff" as="font" crossorigin />
+    <link rel="preload" href="res/img/toronto.webp" as="image" crossorigin />
+    <link rel="preload" href="res/img/davidquality.jpg" as="image" crossorigin />
 
     <link rel="stylesheet" href="site.css" />
     <link rel="stylesheet" href="scroller.css" />
     <link rel="stylesheet" href="projects.css" />
-    <link rel="stylesheet" href="blog.css" />
 
     <title>David Baines</title>
 </head>
@@ -78,10 +80,6 @@
             </li>
             <li class="nav-item active nav-item-animate">
                 <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
-                <span class="nav-slider"></span>
-            </li>
-            <li class="nav-item active nav-item-animate">
-                <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
                 <span class="nav-slider"></span>
             </li>
         </ul>
@@ -156,8 +154,8 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script src="Projects.js" type="text/babel"></script>

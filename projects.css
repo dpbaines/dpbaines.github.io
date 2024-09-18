@@ -26,7 +26,9 @@
     background-color: #F4C7AB;
     font-size: 16px;
     color: black;
-    font-family: Roboto-Light;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     padding: 5px;
     grid-row: 1;
     grid-column: 2;
@@ -188,7 +190,9 @@
 }
 
 .popup-img-caption {
-    font-family: Roboto-Light;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 20px;
     color: rgb(97, 97, 97);
     text-align: center;

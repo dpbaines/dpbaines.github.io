@@ -1,7 +1,7 @@
 
 function close_modal() {
     const modalBox = document.querySelector(".modal");
-        modalBox.style.display = "none";
+    modalBox.style.display = "none";
 }
 
 class Project extends React.Component {
@@ -24,9 +24,9 @@ class Project extends React.Component {
         return (
             <div className="project-container" onClick={() => this.handleClick()}>
                 <div className="project-cell">
-                    <div className="project-title" style={{borderColor: this.props.hintColor}}>{this.props.title}</div>
+                    <div className="project-title" style={{ borderColor: this.props.hintColor }}>{this.props.title}</div>
                     <div className="project-summary">{this.props.summary}</div>
-                    <div className="project-image" style={{backgroundImage: urlStyle}}></div>
+                    <div className="project-image" style={{ backgroundImage: urlStyle }}></div>
                 </div>
             </div>
         );
@@ -37,7 +37,7 @@ class PopupContent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: {__html: "Loading..."},
+            content: { __html: "Loading..." },
             currUrl: this.props.page
         };
     }
@@ -49,22 +49,22 @@ class PopupContent extends React.Component {
         var md = window.markdownit();
 
         fetch(this.props.page)
-                .then(response => response.text())
-                .then(raw => md.render(raw))
-                .then(y => this.setState({content: {__html: y}}));
+            .then(response => response.text())
+            .then(raw => md.render(raw))
+            .then(y => this.setState({ content: { __html: y } }));
     }
 
     componentDidUpdate() {
         if (this.state.currUrl != this.props.page) {
             this.componentDidMount();
-            this.setState({currUrl: this.props.page});
+            this.setState({ currUrl: this.props.page });
         }
     }
 
     render() {
         // TODO: Apparently has the risk of XSS attacks, but why would anyone xss this site
         return (
-            <div className="project-content-box"  dangerouslySetInnerHTML={this.state.content}>
+            <div className="project-content-box" dangerouslySetInnerHTML={this.state.content}>
             </div>
         );
     }
@@ -136,7 +136,7 @@ class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            projs : [{
+            projs: [{
                 "title": "Loading...",
                 "summary": "",
                 "url": "res/img/mandelbrot.png",
@@ -152,11 +152,11 @@ class Projects extends React.Component {
         let expUrl = "projects.json";
         fetch(expUrl)
             .then(response => response.json())
-            .then(y => this.setState({projs: y.projects}));
+            .then(y => this.setState({ projs: y.projects }));
     }
 
     updateStateCallback(update_url, hintColor) {
-        this.setState({currentPage: update_url, currentHintColor: hintColor});
+        this.setState({ currentPage: update_url, currentHintColor: hintColor });
         console.log(update_url);
         console.log(this.state);
     }
@@ -170,7 +170,7 @@ class Projects extends React.Component {
             <div>
                 {mappedProjs}
                 <div className="modal" onClick={() => close_modal()}>
-                    <div className="modal-content" style={{borderColor: this.state.currentHintColor}} onClick={(event) => event.stopPropagation()}>
+                    <div className="modal-content" style={{ borderColor: this.state.currentHintColor }} onClick={(event) => event.stopPropagation()}>
                         <PopupContent page={this.state.currentPage} hintColor={this.state.currentHintColor} />
                     </div>
                 </div>
@@ -183,7 +183,7 @@ class Experience extends React.Component {
     render() {
         return (
             <div className="experience-container">
-                <div className="experience-cell" style={{borderRightColor: this.props.hintColor}}>
+                <div className="experience-cell" style={{ borderRightColor: this.props.hintColor }}>
                     <div className="experience-time">{this.props.time}</div>
                     <div className="experience-title">{this.props.title}</div>
                     <div className="experience-role">{this.props.role}</div>
@@ -199,7 +199,7 @@ class Experiences extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            exps : [{
+            exps: [{
                 "title": "Loading...",
                 "role": "",
                 "time": "",
@@ -214,7 +214,7 @@ class Experiences extends React.Component {
         let expUrl = "experiences.json";
         fetch(expUrl)
             .then(response => response.json())
-            .then(y => this.setState({exps: y.experiences}));
+            .then(y => this.setState({ exps: y.experiences }));
     }
 
     render() {

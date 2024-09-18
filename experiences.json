@@ -3,7 +3,7 @@
         {
             "title": "Amazon",
             "role": "Software Development Engineer 1",
-            "time": "August 2023 - Present",
+            "time": "July 2023 - Present",
             "description": "Amazon Access, building out products and support for government programs such as Snap EBT",
             "smalldesc": "Frontend, backend, and operations work, mostly in Java, Scala and Javascript",
             "color": "#FF9900"
@@ -19,7 +19,7 @@
         {
             "title": "Amazon",
             "role": "Software Development Engineer - Intern",
-            "time": "June 2022 - August 2022",
+            "time": "May 2022 - August 2022",
             "description": "Worked in BeautyTech (Consumables) to improve the shopping experience for makeup.",
             "smalldesc": "I developed for iOS using frameworks such as Tensorflow, Apple's Vision and ARKit",
             "color": "#FF9900"
@@ -27,7 +27,7 @@
         {
             "title": "Intel PSG.",
             "role": "Software Engineering Intern",
-            "time": "May 2021 - May 2022",
+            "time": "May 2021 - June 2022",
             "description": "Worked on the Quartus router, which is one of the key steps in Verilog compilation.",
             "smalldesc": "Developed in C++ on high performance code, and also made use of Python for smaller projects",
             "color": "#007DC3"

@@ -1,24 +1,29 @@
 {
   "name": "dpbaines.github.io",
-  "version": "1.0.0",
-  "description": "Personal Website",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"No test specified\"",
-    "prestart": "npm install",
-    "start": "http-server ./ -a localhost -p 8000 -c-1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dpbaines/dpbaines.github.io.git"
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
-  "author": "David",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dpbaines/dpbaines.github.io/issues"
-  },
-  "homepage": "https://github.com/dpbaines/dpbaines.github.io#readme",
-  "directories": {
-    "lib": "lib"
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4"
   }
 }

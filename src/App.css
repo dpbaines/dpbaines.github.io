@@ -1,26 +1,21 @@
 /* Nav */
 
 nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
 .nav-list {
   backdrop-filter: blur(10px);
-  margin: 10px;
   border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
   display: flex;
   list-style: none;
-  margin: 0;
   padding: 5px;
-  width: 100%;
+  margin: 0px;
 }
 
 .nav-item {

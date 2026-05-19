@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+
+# Dev-only asset sources (web assets live in public/res/img/)
+src/assets/img/
+*.xcf

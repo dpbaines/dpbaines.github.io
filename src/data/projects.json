@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "title": "Pathfinder",
+            "summary": "My WIP travel itinerary optimizer, a full stack Rust web application.",
+            "url": "res/img/pathfinder.png",
+            "page": "projects/pathfinder.md",
+            "color": "#427bf583"
+        },
+        {
+            "title": "Caracal - Database",
+            "summary": "My capstone project, working on a deterministic distributed database",
+            "url": "res/img/datamigration.png",
+            "page": "projects/caracal.md",
+            "color": "#59092583"
+        },
+        {
+            "title": "RISC-V CPU Core",
+            "summary": "A pipelined CPU core written in SystemVerilog",
+            "url": "res/img/cpurtl1.png",
+            "page": "projects/cpucore.md",
+            "color": "#CAB8FF83"
+        },
+        {
+            "title": "Mandelbrot Set",
+            "summary": "A Mandelbrot set renderer in Verilog, targetted for a Cyclone V FPGA",
+            "url": "res/img/mandelbrot.png",
+            "page": "projects/mandelbrot.md",
+            "color": "rgba(130, 160, 243, 0.5)"
+        },
+        {
+            "title": "Posfix",
+            "summary": "How can we use technology to improve your posture",
+            "url": "res/img/posfix.png",
+            "page": "projects/posfix.md",
+            "color": "#ff787883"
+        },
+        {
+            "title": "Audio Visualizer",
+            "summary": "An FPGA based audio visualizer",
+            "url": "res/img/audiovisualizer.png",
+            "page": "projects/audio.md",
+            "color": "#C6D57E83"
+        }
+    ]
+}

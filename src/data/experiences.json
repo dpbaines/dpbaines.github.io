@@ -1,0 +1,52 @@
+{
+    "experiences": [
+        {
+            "title": "Amazon",
+            "role": "Software Development Engineer 2",
+            "time": "January 2026 - Present",
+            "description": "Amazon Access, building out integrations with Rufus (now Alexa for Shopping), and platform expansions for benefits vending.",
+            "tags": ["Java", "TypeScript", "AWS", "Backend"],
+            "color": "#FF9900"
+        },
+        {
+            "title": "Amazon",
+            "role": "Software Development Engineer 1",
+            "time": "July 2023 - December 2025",
+            "description": "Amazon Access, building out products and support for government programs such as Snap EBT. Frontend, backend, and operations work across the stack.",
+            "tags": ["Frontend", "Backend", "Java", "Scala", "TypeScript"],
+            "color": "#FF9900"
+        },
+        {
+            "title": "Caracal",
+            "role": "Capstone Project",
+            "time": "September 2022 - May 2023",
+            "description": "Capstone design project on the research distributed database project Caracal, under Prof. Ashvin Goel. Our team implemented data migration and dynamic transaction generation for benchmarking; I implemented the data transfer and migration control code.",
+            "tags": ["Distributed Systems", "C++"],
+            "color": "#68D89B"
+        },
+        {
+            "title": "Amazon",
+            "role": "Software Development Engineer - Intern",
+            "time": "May 2022 - August 2022",
+            "description": "Worked in BeautyTech (Consumables) to improve the shopping experience for makeup. Developed for iOS using frameworks such as TensorFlow, Apple's Vision, and ARKit.",
+            "tags": ["iOS", "TensorFlow", "Vision", "ARKit"],
+            "color": "#FF9900"
+        },
+        {
+            "title": "Intel PSG.",
+            "role": "Software Engineering Intern",
+            "time": "May 2021 - June 2022",
+            "description": "Worked on the Quartus router, which is one of the key steps in Verilog compilation. Developed in C++ on high-performance code, and also made use of Python for smaller projects.",
+            "tags": ["C++", "Python", "Verilog"],
+            "color": "#007DC3"
+        },
+        {
+            "title": "VTR - Verilog to Routing",
+            "role": "Intern Researcher",
+            "time": "May 2020 - September 2020",
+            "description": "Open source Verilog compiler; I worked on automatic hold resolution in the Router.",
+            "tags": ["C++", "Verilog"],
+            "color": "#fcba03"
+        }
+    ]
+}

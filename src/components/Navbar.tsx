@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code2, Home, BookOpen, Layers, Menu, X } from 'lucide-react';
+import { Home, BookOpen, Layers, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
     const location = useLocation();
